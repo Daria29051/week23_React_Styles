@@ -1,0 +1,91 @@
+//variables
+$bg-color1: rgb(146, 146, 240);
+$bg-color2: rgb(130, 226, 130);
+$bg-color3: rgb(208, 83, 83);
+$bg-color4: rgb(48, 41, 41);
+$bg-color5: rgba(128, 128, 128, 0.2);
+$text-color1: white;
+$text-color2: black;
+$text-margin: 10px;
+
+//mixin
+@mixin rate-part-composition{
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//контейнер
+
+.rates-container {
+  display: flex;
+  flex-direction: row;
+}
+
+//карточка тарифа
+
+.rate {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+  width: fit-content;
+  height: 350px;
+}
+
+.rate-part {
+  @include rate-part-composition;
+}
+
+.text {
+  margin: $text-margin;
+}
+
+// блок названия
+.rate__title-container {
+  color: $text-color1;
+}
+
+.rate__title-text {
+  font-weight: 400;
+}
+.rate-title1 {
+  background-color: $bg-color1;
+}
+.rate-title2 {
+  background-color: $bg-color2;
+}
+.rate-title3 {
+  background-color: $bg-color3;
+}
+.rate-title4 {
+  background-color: $bg-color4;
+}
+
+//блок цены
+.rate__price-container {
+  color: $text-color1;
+}
+
+.rate__price-bold {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.rate-price1 {
+  background-color: $bg-color1;
+}
+.rate-price2 {
+  background-color: $bg-color2;
+}
+.rate-price3 {
+  background-color: $bg-color3;
+}
+.rate-price4 {
+  background-color: $bg-color4;
+}
+
+//блок скорости и трафика
+.rate__speed-container,
+.rate__traffic-container {
+  background-color: $bg-color5;
+}

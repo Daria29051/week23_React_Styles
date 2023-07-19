@@ -1,0 +1,77 @@
+.rates-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.rate {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 350px;
+}
+
+.rate-part {
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin: 10px;
+}
+
+.rate__title-container {
+  color: white;
+}
+
+.rate__title-text {
+  font-weight: 400;
+}
+
+.rate-title1 {
+  background-color: rgb(146, 146, 240);
+}
+
+.rate-title2 {
+  background-color: rgb(130, 226, 130);
+}
+
+.rate-title3 {
+  background-color: rgb(208, 83, 83);
+}
+
+.rate-title4 {
+  background-color: rgb(48, 41, 41);
+}
+
+.rate__price-container {
+  color: white;
+}
+
+.rate__price-bold {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.rate-price1 {
+  background-color: rgb(146, 146, 240);
+}
+
+.rate-price2 {
+  background-color: rgb(130, 226, 130);
+}
+
+.rate-price3 {
+  background-color: rgb(208, 83, 83);
+}
+
+.rate-price4 {
+  background-color: rgb(48, 41, 41);
+}
+
+.rate__speed-container,
+.rate__traffic-container {
+  background-color: rgba(128, 128, 128, 0.2);
+}/*# sourceMappingURL=Rate.css.map */

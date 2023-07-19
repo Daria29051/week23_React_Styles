@@ -1,0 +1,17 @@
+.card {
+    margin-bottom: 30px;
+}
+
+.card-img {
+    width: 250px;
+    height: auto;
+}
+
+.card-new {
+    color: red;
+    font-weight: 600;
+    background-color: pink;
+    width: 100px;
+    margin: auto;
+    height: fit-content;
+}

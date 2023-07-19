@@ -1,0 +1,19 @@
+[
+    {
+      "title": "Skirt",
+      "price": 100,
+      "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      "imgLink": "https://cdn1.ozone.ru/s3/multimedia-i/6371299986.jpg",
+      "addedToCart": 0,
+      "newGood": "Новинка"
+    },
+
+    {
+      "title": "Blouse",
+      "price": 250,
+      "description": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      "imgLink": "http://klublady.ru/uploads/posts/2022-03/1647027848_28-klublady-ru-p-obraz-kozhanie-yubki-plisse-foto-29.jpg",
+      "addedToCart": 1
+      
+    }
+]

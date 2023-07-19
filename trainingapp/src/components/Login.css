@@ -1,0 +1,15 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login__input {
+    width: fit-content;
+}
+
+.login__button {
+    width: fit-content;
+    cursor: pointer;   
+}   
+
