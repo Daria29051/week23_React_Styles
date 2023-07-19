@@ -9,7 +9,7 @@ $text-color2: black;
 $text-margin: 10px;
 
 //mixin
-@mixin rate-part-composition{
+@mixin rate-part-composition {
   border: 1px solid rgba(128, 128, 128, 0.2);
   display: flex;
   justify-content: center;
@@ -21,6 +21,7 @@ $text-margin: 10px;
 .rates-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 //карточка тарифа
@@ -88,4 +89,10 @@ $text-margin: 10px;
 .rate__speed-container,
 .rate__traffic-container {
   background-color: $bg-color5;
+}
+
+//выбор карточки
+.selected {
+  height: 380px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); ;
 }
