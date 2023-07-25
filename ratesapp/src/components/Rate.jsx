@@ -15,7 +15,6 @@ const handleChange = (index) => {
       console.log(updatedSelection);
       return updatedSelection;
     });
-    console.log('bla');
   }
 
     return ( 
