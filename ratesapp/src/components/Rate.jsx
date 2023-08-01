@@ -3,24 +3,15 @@ import rates from "./data/rates.json"
 import  "./Rate.scss"
 
 function Rate () {
-const   [isSelected, setSelected] = useState(false);
+const [selectedIndex, setSelectedIndex] = useState(null);
 const handleChange = (index) => {
-    setSelected((prevState) => {    
-      const updatedSelection = Array.from(prevState);
-      let [selectedItem, ...otherPart] = [updatedSelection[index], ...updatedSelection];
-      for (let item of otherPart) {
-        setSelected(false);
-      }
-      updatedSelection[index] = !updatedSelection[index];
-      console.log(updatedSelection);
-      return updatedSelection;
-    });
+    setSelectedIndex(index === selectedIndex ? null : index)
   }
 
     return ( 
 <div className="rates-container"> {
     rates.map((rate, index) =>(
-        <div className={`rate` + (isSelected[index] ? " selected" : "")} key={index} onClick={() => handleChange(index)}>
+        <div className={`rate ${selectedIndex === index ? "selected" : ""}`} key={index} onClick={() => handleChange(index)}>
            <div className={`rate-part `+ `rate__title-container `+ `rate-title`+ rate.id}>
             <h1 className="text rate__title-text">{rate.title}</h1>
            </div>
